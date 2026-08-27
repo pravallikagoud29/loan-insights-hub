@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-loan-portfolio-analysis"
+version = "1.0.0"
+description = "Python Data Science project for personal loan portfolio analysis using pandas, NumPy, Matplotlib and Seaborn."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Pravalika Burra" }
+]
+keywords = ["data-science", "pandas", "numpy", "matplotlib", "seaborn", "loan-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pandas>=1.5.0",
+    "numpy>=1.23.0",
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0"
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyter", "notebook"]
+
+[project.scripts]
+loan-analysis = "main:main"
+
+[tool.setuptools]
+py-modules = ["main", "src.loan_analysis", "src.eda"]

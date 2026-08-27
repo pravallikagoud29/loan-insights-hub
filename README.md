@@ -26,6 +26,8 @@ personal-loan-portfolio-analysis/
 ├── notebooks/
 │   └── Personal_Loan_Portfolio_Analysis.ipynb
 ├── visualizations/                     # Generated charts (PNG)
+├── main.py                             # Convenience entry point
+├── pyproject.toml                      # Python project metadata
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -59,9 +61,12 @@ personal-loan-portfolio-analysis/
 pip install -r requirements.txt
 
 # 2. Run the full analysis
+python main.py
+
+# 3. Or run the pipeline directly
 python src/loan_analysis.py
 
-# 3. Or explore interactively
+# 4. Or explore interactively
 jupyter notebook notebooks/Personal_Loan_Portfolio_Analysis.ipynb
 ```
 
