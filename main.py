@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 
-from loan_analysis import main as run_analysis
+from loan_analysis import run_analysis
 
 
 def main() -> None:
