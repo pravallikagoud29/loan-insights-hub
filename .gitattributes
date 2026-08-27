@@ -1,15 +1,9 @@
-# Ensure GitHub/Linguist detects this repository as a Python Data Science project.
-*.py linguist-detectable=true
+# Ensure GitHub Linguist classifies this as a Python Data Science project.
+*.py linguist-language=Python linguist-detectable=true
 *.ipynb linguist-detectable=false
 
 # The React/TypeScript preview shell is supporting scaffolding, not the main project.
-src/routes/** linguist-vendored=true
-src/lib/** linguist-vendored=true
-src/hooks/** linguist-vendored=true
-src/routeTree.gen.ts linguist-generated=true
-src/router.tsx linguist-vendored=true
-src/server.ts linguist-vendored=true
-src/start.ts linguist-vendored=true
-src/styles.css linguist-vendored=true
-vite.config.ts linguist-vendored=true
-eslint.config.js linguist-vendored=true
+*.ts linguist-vendored=true
+*.tsx linguist-vendored=true
+*.js linguist-vendored=true
+*.css linguist-vendored=true
