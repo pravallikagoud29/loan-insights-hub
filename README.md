@@ -26,6 +26,8 @@ personal-loan-portfolio-analysis/
 ├── notebooks/
 │   └── Personal_Loan_Portfolio_Analysis.ipynb
 ├── visualizations/                     # Generated charts (PNG)
+├── main.py                             # Convenience entry point
+├── pyproject.toml                      # Python project metadata
 ├── README.md
 ├── requirements.txt
 └── .gitignore
